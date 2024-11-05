@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task to draw line and circle</title>
+  <link rel="stylesheet" href="./src/styles/styles.css">
+  <script src="src/scripts/scripts.js" defer></script>
+  <script src="src/scripts/canvas.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="input-form">
+      <form class="form draw-line">
+        <h2>Draw a straight line:</h2>
+
+        <p>Please fill-in the form with coordinates for the start of the line (x1, x2) and for the end of the line (x2, y2)</p>
+
+        <div class="coordinates">
+
+          <div class="block-coordinates">
+            <h3>Start coordinates:</h3>
+
+            <label for="#line-x1">x1: </label>
+            <input 
+              name="x1" 
+              id="line-x1" 
+              type="number" 
+              min="-15" 
+              max="15" 
+              value="0"
+            >
+            <br>
+
+            <label for="#line-y1">y1: </label>
+            <input 
+              name="y1" 
+              id="line-y1" 
+              type="number" 
+              min="-15" 
+              max="15" 
+              value="0"
+            >
+            <br>
+          </div>
+          
+          <div class="block-coordinates">
+            <h3>End coordinates:</h3>
+
+            <label for="#line-x2">x2: </label>
+            <input 
+              name="x2" 
+              id="line-x2" 
+              type="number" 
+              min="-15" 
+              max="15" 
+              value="0"
+            >
+            <br>
+
+            <label for="#line-y2">y2: </label>
+            <input 
+              name="y2" 
+              id="line-y2" 
+              type="number" 
+              min="-15" 
+              max="15" 
+              value="0"
+            >
+            <br>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="button" type="button" onclick="{handleDrawLine()}">Draw</button>
+          <button class="button" type="button" onclick="{clearCanvas()}">Reset</button>
+        </div>
+      </form>
+
+      <form class="form draw-circle">
+        <h2>Draw a circle:</h2>
+
+        <p>Please fill-in the form with coordinates for the start of the line (x1, x2) and for the end of the line (x2, y2)</p>
+
+        <div class="coordinates">
+          <div class="block-coordinates">
+            <h3>Center coordinates:</h3>
+            <label for="#circle-x1">x1: </label>
+            <input name="x1" id="circle-x1" type="number" min="-15" max="15" value="0" required>
+            <br>
+
+            <label for="#circle-y1">y1: </label>
+            <input name="y1" id="circle-y1" type="number" min="-15" max="15" value="0" required>
+            <br>
+          </div>
+
+          <div class="block-coordinates">
+            <h3>Circle radius:</h3>
+
+            <label for="#circle-radius">r: </label>
+
+            <input name="radius" id="circle-radius" type="number" min="0" max="10" value="0" required>
+            <br>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="button" type="button" onclick="{handleDrawCircle()}">Draw</button>
+          <button class="button" type="button" onclick="{clearCanvas()}">Reset</button>
+        </div>
+
+      </form>
+
+    </div>
+    <div class="canvas-container">
+      <canvas id="cartesianCanvas" width="600" height="600"></canvas>    
+    </div>  
+  </div>
+</body>
+</html>

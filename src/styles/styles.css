@@ -1,0 +1,72 @@
+.container {
+  padding: 30px;
+  display: flex;
+  gap: 50px;
+
+  flex-wrap: wrap-reverse;
+}
+
+.form {
+  padding: 2px 10px;
+  width: 400px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+
+  background-color: #f5f5f5;
+  border: 1px solid #d1d1d1; 
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0px -1px 1px rgba(255, 255, 255, 0.7);
+
+}
+
+input {
+  border: 1px solid #d1d1d1; 
+  height: 20px;
+}
+
+.coordinates {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.block-coordinates > * {
+  margin-top: 10px;
+}
+
+.block-coordinates > label {
+  display: inline;
+}
+
+.canvas-container {
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  padding-block: 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+button {
+  background-color: #e0e0e0;
+  color: #333333;
+  border: 1px solid #b0b0b0; 
+  border-radius: 16px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer; 
+  transition: background-color 0.3s, box-shadow 0.3s; 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+button:hover {
+  background-color: #d1d1d1;           /* Slightly darker gray on hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+button:active {
+  background-color: #bfbfbf;           /* Even darker shade when pressed */
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2) inset; /* Inset shadow for pressed effect */
+}

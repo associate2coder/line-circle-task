@@ -1,0 +1,20 @@
+{
+  "name": "line-circle-task",
+  "version": "1.0.0",
+  "description": "Implementing the task:",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server . --entry-file=index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.2.0",
+    "live-server": "^1.2.2"
+  },
+  "homepage": "https://associate2coder.github.io/line-circle-task"
+
+}
